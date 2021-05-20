@@ -5,6 +5,7 @@ import Heading from "./components/agility-pageModules/Heading";
 import FeaturedPost from "./components/agility-pageModules/FeaturedPost";
 import PostsListing from "./components/agility-pageModules/PostsListing";
 import PostDetails from "./components/agility-pageModules/PostDetails";
+import ContactForm from "./components/agility-pageModules/ContactForm";
 
 // Our Agility Data Fetch
 import PostsListingData from "./data/PostsListing";
@@ -13,18 +14,19 @@ import PostsListingData from "./data/PostsListing";
 import MainTemplate from "./components/agility-pageTemplates/MainTemplate";
 
 export default {
-  dataFetch: {
-    PostsListing: PostsListingData,
-  },
-  moduleComponents: {
-    TextBlockWithImage,
-    RichTextArea,
-    Heading,
-    FeaturedPost,
-    PostsListing,
-    PostDetails,
-  },
-  pageTemplateComponents: {
-    "Main Template": MainTemplate,
-  },
+	dataFetch: {
+		PostsListing: PostsListingData,
+	},
+	moduleComponents: {
+		TextBlockWithImage,
+		RichTextArea,
+		Heading,
+		FeaturedPost,
+		PostsListing,
+		PostDetails,
+		ContactForm,
+	},
+	pageTemplateComponents: {
+		"Main Template": MainTemplate,
+	},
 };

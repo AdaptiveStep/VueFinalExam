@@ -1,6 +1,33 @@
 <template>
-  <footer class="relative px-8 py-6 md:py-4 mt-8 bg-gray-100">
-    <div class="max-w-screen-xl mx-auto md:flex md:items-center">
+
+  <footer class="relative text-white ">
+    <div class="max-w-screen-xl px-8 py-6 md:py-4 mt-8 mx-auto md:flex bg-gray-800 md:items-center text-2xl px-8 py-6	">
+      <div class="text-center mb-4 md:mb-0 md:text-center flex-shrink-0 relative">
+        <a
+          href="https://www.agilitycms.com"
+          target="_blank"
+          rel="noreferrer"
+          title="Agility CMS"
+        >
+        Bara Rent Sverige AB
+
+        </a>
+      </div>
+      <div class="flex-grow mb-4 md:mb-0">
+        <p
+          class="text-center md:text-center md:ml-8 md:max-w-3xl"
+        >
+          Myggdalsvägen 114, 135 43 Tyresö
+          
+        </p>
+      </div>
+      <div class="flex-1-grow text-center">
+        Orgnr: 559198-2201
+
+      </div>
+    </div>
+
+    <!-- <div class="max-w-screen-xl px-8 py-6 md:py-4 mt-8 mx-auto  md:flex md:items-center">
       <div class="text-center mb-4 md:mb-0 md:text-left flex-shrink-0 relative">
         <a
           href="https://www.agilitycms.com"
@@ -109,7 +136,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
   </footer>
 </template>
 
