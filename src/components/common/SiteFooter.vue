@@ -1,7 +1,7 @@
 <template>
 
-  <footer class="relative text-white ">
-    <div class="max-w-screen-xl px-8 py-6 md:py-4 mt-8 mx-auto md:flex bg-gray-800 md:items-center text-2xl px-8 py-6	">
+  <footer class="relative text-white max-w-screen bg-gray-800 py-5">
+    <div class="max-w-screen-xl px-8 md:py-4 mt-8 mx-auto md:flex  md:items-center text-2xl ">
       <div class="text-center mb-4 md:mb-0 md:text-center flex-shrink-0 relative">
         <a
           href="https://www.agilitycms.com"
