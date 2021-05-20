@@ -46,6 +46,7 @@
                     class="text-secondary-500 mt-1 font-black text-2xl group-hover:text-primary-500 transition duration-300"
                   >
                     {{ post.fields.title }}
+                    
                   </h2>
                 </div>
               </div>
@@ -54,6 +55,15 @@
         </div>
       </div>
     </div>
+    
+    
+
+
+   <div class='flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5'>
+      <button v-on:onclick="clicktest()" class='bg-blue-400 hover:bg-blue-400 text-white font-bold py-2 px-8 border-b-2 border-r-2 border-blue-700 hover:border-blue-500 rounded  focus:outline-none '>TEST BUTTON FOR TEST METHOD</button>
+    </div>
+
+
   </div>
 </template>
 <script>
@@ -66,14 +76,32 @@ export default {
     dynamicPageItem: Object,
     moduleData: Object,
   },
+  methods:{
+    clicktest: function(){
+      // let entirelist = this.page.zones.MainContentZone;
+      // let filteredList = entirelist.filter(a => a.item.properties.definitionName=="PostsListing" && a.item.fields.categoryPick_TextField == "Questions" );
+
+
+      // console.log(filteredList)
+      alert("HELLLO");
+    }
+  },
   computed: {
     posts: function() {
       // our module data was loaded in src/data/PostsLists.js
-      return this.moduleData["PostsListing"];
+      // OBS alla tre modulerna måste finnas på plats och vara i exakt samma ordning.
+      let filteredposts = this.moduleData["PostsListing"].filter(x => x.category===this.listingCategory);
+      return filteredposts;
     },
     hasPosts: function() {
       return this.posts.length >= 1;
     },
+    listingCategory: function(){
+      return this.page.zones.MainContentZone[2].item.fields.categoryPick_TextField;
+    },
+    pageName: function(){
+      return this.page.zones.MainContentZone;
+    }
   },
 };
 </script>

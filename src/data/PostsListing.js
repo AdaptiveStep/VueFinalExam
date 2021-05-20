@@ -1,41 +1,46 @@
 export default async ({ $agility }) => {
-  // set up posts array
-  let posts = [];
+	// set up posts array
+	let posts = [];
 
-  // set language code
-  const languageCode = $agility.languages[0];
+	// set language code
+	const languageCode = $agility.languages[0];
 
-  try {
-    // raw posts
-    const rawPosts = await $agility.client.getContentList({
-      referenceName: "posts",
-      languageCode,
-    });
+	try {
+		// raw posts
+		const rawPosts = await $agility.client.getContentList({
+			referenceName: "posts",
+			languageCode,
+		});
 
-    // categories
-    const categories = await $agility.client.getContentList({
-      referenceName: "categories",
-      languageCode,
-    });
+		// categories
+		const categories = await $agility.client.getContentList({
+			referenceName: "categories",
+			languageCode,
+		});
 
-    posts = rawPosts.map((post) => {
-      // get category id
-      const categoryID = post.fields.category?.contentid;
+		posts = rawPosts.map((post) => {
+			// get category id
+			const categoryID = post.fields.category?.contentid;
 
-      // find matching category
-      post.linkedCategory = categories?.find((c) => c.contentID == categoryID);
+			// find matching category
+			post.linkedCategory = categories?.find(
+				(c) => c.contentID == categoryID
+			);
 
-      post.category = post.linkedCategory?.fields.title || "Uncategorized";
+			post.category =
+				post.linkedCategory?.fields.title || "Uncategorized";
 
-      // format date
-      post.formattedDate = new Date(post.fields.date).toLocaleDateString();
+			// format date
+			post.formattedDate = new Date(
+				post.fields.date
+			).toLocaleDateString();
 
-      // return post
-      return post;
-    });
-  } catch (error) {
-    if (console) console.error("Could not load posts list.", error);
-  }
+			// return post
+			return post;
+		});
+	} catch (error) {
+		if (console) console.error("Could not load posts list.", error);
+	}
 
-  return posts;
+	return posts;
 };
