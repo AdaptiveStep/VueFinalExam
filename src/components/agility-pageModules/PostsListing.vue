@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="relative px-8 mb-12" v-else>
-      <div class="max-w-screen-xl mx-auto">
+      <div class="max-w-screen-xl mx-auto ">
         <div class="sm:grid sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
           <template v-for="post in posts">
             <a :href="`/blog/${item.fields.categoryPick_TextField.toLowerCase()}/${post.fields.slug}`" :key="post.title">
@@ -30,20 +30,20 @@
                     style="width: 100%; height: 100%;"
                   />
                 </div>
-                <div class="bg-gray-100 p-8 border-2 border-t-0 rounded-b-lg">
-                  <div
-                    class="uppercase text-primary-500 text-xs font-bold tracking-widest leading-loose"
-                  >
-                    {{ post.category }}
-                  </div>
-                  <div class="border-b-2 border-primary-500 w-8"></div>
-                  <div
-                    class="mt-4 uppercase text-gray-600 italic font-semibold text-xs"
-                  >
-                    {{ post.formattedDate }}
-                  </div>
+                <div class="bg-blue-400 p-3 text-center border-t-0 rounded-b-xl">
+                    <!-- <div
+                      class="uppercase text-primary-500 text-xs font-bold tracking-widest leading-loose"
+                    >
+                      {{ post.category }}
+                    </div>
+                    <div class="border-b-2 border-primary-500 w-8"></div>
+                    <div
+                      class="mt-4 uppercase text-gray-600 italic font-semibold text-xs"
+                    >
+                      {{ post.formattedDate }}
+                    </div> -->
                   <h2
-                    class="text-secondary-500 mt-1 font-black text-2xl group-hover:text-primary-500 transition duration-300"
+                    class="text-white mt-1 font-black text-2xl group-hover:text-blue-900 transition duration-300"
                   >
                     {{ post.fields.title }}
                     

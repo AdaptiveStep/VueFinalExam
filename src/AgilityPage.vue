@@ -43,7 +43,7 @@ export default {
   mounted: function() {},
   head() {
     return {
-      title: `${this.pageInSitemap.title} | My Travel Blog`,
+      title: `${this.pageInSitemap.title} | BaraRent.se`,
       meta: [
         {
           hid: "generator",

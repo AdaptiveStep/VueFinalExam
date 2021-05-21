@@ -8,6 +8,7 @@ import PostDetails from "./components/agility-pageModules/PostDetails";
 import ContactForm from "./components/agility-pageModules/ContactForm";
 import BlueBanner from "./components/agility-pageModules/BlueBanner";
 import BigJumbotron from "./components/agility-pageModules/BigJumbotron";
+import ImageHeader from "./components/agility-pageModules/ImageHeader";
 
 // Our Agility Data Fetch
 import PostsListingData from "./data/PostsListing";
@@ -29,6 +30,7 @@ export default {
 		ContactForm,
 		BlueBanner,
 		BigJumbotron,
+		ImageHeader,
 	},
 	pageTemplateComponents: {
 		"Main Template": MainTemplate,
