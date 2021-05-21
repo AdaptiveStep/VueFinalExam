@@ -1,23 +1,17 @@
 <template>
-  <div class="relative px-8">
-    <div class="max-w-screen-xl mx-auto">
-      <div class="h-64 md:h-96 relative">
+  <div class="relative ">
+    <div class="max-w-auto">
+      <div class="md:h-96 relative">
         <img
           :src="post.image.url"
-          class="object-cover object-center rounded-lg"
-          style="width: 100%; height: 380px"
+          class="object-cover object-center h-96 w-full "
+          
         />
       </div>
-      <div class="max-w-2xl mx-auto mt-4">
-        <div
-          class="uppercase text-primary-500 text-xs font-bold tracking-widest leading-loose"
-        >
-          {{ category }}
-        </div>
-        <div class="border-b-2 border-primary-500 w-8"></div>
-        <div class="mt-4 uppercase text-gray-600 italic font-semibold text-xs">
-          {{ date }}
-        </div>
+      <div class="max-w-2xl mx-auto mt-4 px-8">
+
+        
+
         <h1 class="font-display text-4xl font-bold my-6 text-secondary-500">
           {{ post.title }}
         </h1>

@@ -2,7 +2,7 @@
   <header class="relative w-full mx-auto bg-white px-8">
     <div class="max-w-screen-xl mx-auto">
       <div
-        class="flex justify-between items-center py-10 md:justify-start md:space-x-10"
+        class="flex justify-between items-center py-10 lg:justify-start lg:space-x-10"
       >
         <div class="lg:w-0 lg:flex-1">
           <a href="/" class="flex items-center">
@@ -19,7 +19,7 @@
             </template>
           </a>
         </div>
-        <div class="-mr-2 -my-2 md:hidden">
+        <div class="-mr-2 -my-2 lg:hidden">
           <button
             @click="toggle"
             type="button"
@@ -41,7 +41,7 @@
             </svg>
           </button>
         </div>
-        <nav class="hidden md:flex space-x-10 ">
+        <nav class="hidden lg:flex space-x-10 ">
           <template v-for="link in links">
             <a
               :href="link.path"
@@ -56,7 +56,7 @@
       </div>
     </div>
     <div
-      class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden z-20"
+      class="absolute top-0 inset-x-0 pt-2 transition transform origin-top-right lg:hidden z-20"
       v-show="isOpen"
     >
       <div >

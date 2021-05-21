@@ -1,8 +1,8 @@
 <template>
 
-  <div class="relative px-8 ">
-    <p class="text-7xl text-center"> Kontakta oss </p>
-    <div class="max-w-auto my-12 md:mt-18 lg:mt-20">
+  <div class="relative ">
+    <p class="text-7xl text-center pb-10"> Kontakta oss </p>
+    <div class="max-w-auto">
       <div class="rounded-images prose max-w-full mx-auto" v-html="item.fields.textblob" />
       <div class="flex bg-pink-200 items-center justify-center  max-w-full mx-auto">
   <div class="grid rounded-lg w-11/12 md:w-9/12 lg:w-1/2 text-3xl">

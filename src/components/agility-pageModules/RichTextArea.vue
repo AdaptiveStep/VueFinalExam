@@ -1,5 +1,5 @@
 <template>
-  <div class="relative px-8">
+  <div class="relative p-8">
     <p class="text-7xl text-center"> Om oss </p>
     <div class="max-w-2xl mx-auto my-12 md:mt-18 lg:mt-20">
       <div class="rounded-images prose max-w-full mx-auto" v-html="item.fields.textblob" />
