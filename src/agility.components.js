@@ -10,6 +10,8 @@ import BlueBanner from './components/agility-pageModules/BlueBanner'
 import BigJumbotron from './components/agility-pageModules/BigJumbotron'
 import ImageHeader from './components/agility-pageModules/ImageHeader'
 import Reviews from './components/agility-pageModules/Reviews'
+import SelectedCategories from './components/agility-pageModules/SelectedCategories'
+import SelectedPosts from './components/agility-pageModules/SelectedPosts'
 
 // Our Agility Data Fetch
 import PostsListingData from './data/PostsListing'
@@ -33,6 +35,8 @@ export default {
 		BigJumbotron,
 		ImageHeader,
 		Reviews,
+		SelectedCategories,
+		SelectedPosts,
 	},
 	pageTemplateComponents: {
 		'Main Template': MainTemplate,
