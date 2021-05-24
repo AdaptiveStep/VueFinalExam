@@ -1,6 +1,6 @@
 <template>
-	<div class="container mx-auto py-8 ">
-		<div class="relative px-8 mb-12">
+	<div  v-bind:class="[background()]">
+		<div class="container p-8 mx-auto" >
 			<div class="max-w-screen-xl mx-auto ">
 				<div class="sm:grid sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
 					<a :href="`${item.fields.url.href}`" v-for="(item, index) in item.fields.selectedCategories" :key="index">
@@ -37,6 +37,21 @@
 		methods: {
 			getURL(item) {
 				return item.fields.url.href
+			},
+			background: function() {
+				let fetchedColor = this.item.fields.bgColor
+				let translatedColor
+				switch (fetchedColor) {
+					case 'pink':
+						translatedColor = 'bg-pink-200'
+						break
+					case 'blue':
+						translatedColor = 'bg-blue-300'
+						break
+					default:
+						translatedColor = 'bg-white'
+				}
+				return translatedColor
 			},
 		},
 		computed: {

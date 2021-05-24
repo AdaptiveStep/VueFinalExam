@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="mt-44 px-6 flex flex-col items-center justify-center" v-if="!hasPosts">
+		<div v-if="!hasPosts" class="mt-44 px-6 flex flex-col items-center justify-center">
 			<h1 class="text-3xl text-center font-bold text-secondary-500">
 				Inga inlägg tillgängliga.
 			</h1>
@@ -11,8 +11,8 @@
 			</div>
 		</div>
 
-		<div class="relative px-8 my-12" v-else>
-			<div class="max-w-screen-xl mx-auto ">
+		<div v-else class="relative " v-bind:class="[background()]">
+			<div class="max-w-screen-xl mx-auto p-8 ">
 				<div class="sm:grid sm:gap-8 sm:grid-cols-2 lg:grid-cols-3">
 					<template v-for="post in posts">
 						<a :href="`/blog${item.fields.categoryPick.fields.url.href}/${post.fields.slug}`" :key="post.title">
@@ -32,9 +32,9 @@
 			</div>
 		</div>
 
-		<!-- <div class='flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5'>
-      <button v-on:onclick="clicktest()" class='bg-blue-400 hover:bg-blue-400 text-white font-bold py-2 px-8 border-b-2 border-r-2 border-blue-700 hover:border-blue-500 rounded  focus:outline-none '>TEST BUTTON FOR TEST METHOD</button>
-    </div> -->
+		<!-- <div class="flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5">
+			<button @click="background" class="bg-blue-400 hover:bg-blue-400 text-white font-bold py-2 px-8 border-b-2 border-r-2 border-blue-700 hover:border-blue-500 rounded  focus:outline-none ">TEST BUTTON FOR TEST METHOD</button>
+		</div> -->
 	</div>
 </template>
 <script>
@@ -54,6 +54,21 @@
 
 				// console.log(filteredList)
 				alert('HELLLO')
+			},
+			background: function() {
+				let fetchedColor = this.item.fields.bgColor
+				let translatedColor
+				switch (fetchedColor) {
+					case 'pink':
+						translatedColor = 'bg-pink-200'
+						break
+					case 'blue':
+						translatedColor = 'bg-blue-300'
+						break
+					default:
+						translatedColor = 'bg-white'
+				}
+				return translatedColor
 			},
 		},
 		computed: {

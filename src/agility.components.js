@@ -12,6 +12,7 @@ import ImageHeader from './components/agility-pageModules/ImageHeader'
 import Reviews from './components/agility-pageModules/Reviews'
 import SelectedCategories from './components/agility-pageModules/SelectedCategories'
 import SelectedPosts from './components/agility-pageModules/SelectedPosts'
+import TextAndButton from './components/agility-pageModules/TextAndButton'
 
 // Our Agility Data Fetch
 import PostsListingData from './data/PostsListing'
@@ -37,6 +38,7 @@ export default {
 		Reviews,
 		SelectedCategories,
 		SelectedPosts,
+		TextAndButton,
 	},
 	pageTemplateComponents: {
 		'Main Template': MainTemplate,

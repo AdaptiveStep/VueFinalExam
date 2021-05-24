@@ -31,7 +31,7 @@
           >
             <div class="flex items-center">
               <fa class="mr-2" :icon="['fas', 'info-circle']" />
-              <p class="hidden md:block text-sm">Help Center</p>
+              <p class="hidden md:block text-sm">Wiki</p>
             </div>
           </a>
         </div>
@@ -45,7 +45,7 @@
           >
             <div class="flex items-center">
               <fa class="mr-2" :icon="['fab', 'github']" />
-              <p class="hidden md:block text-sm">View on GitHub</p>
+              <p class="hidden md:block text-sm">View BaraRent on GitHub</p>
             </div>
           </a>
         </div>
@@ -53,12 +53,12 @@
       <div class="py-4">
         <template v-if="isPreview">
           <p class="text-xs md:text-base">
-            Previewing <span class="font-bold">Latest</span> Changes
+            Förhandsgranskar <span class="font-bold">Senaste</span> Ändringar
           </p>
         </template>
         <template v-else>
           <p class="text-xs md:text-base">
-            Viewing <span class="font-bold">Published</span> Content
+            Visar <span class="font-bold">Publicerat</span> Content
           </p>
         </template>
       </div>

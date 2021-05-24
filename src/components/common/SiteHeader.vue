@@ -1,5 +1,5 @@
 <template>
-  <header class="relative w-full mx-auto bg-white px-8">
+  <header class="relative w-full mx-auto bg-white px-8 shadow-lg">
     <div class="max-w-screen-xl mx-auto">
       <div
         class="flex justify-between items-center py-10 lg:justify-start lg:space-x-10"
@@ -56,7 +56,7 @@
       </div>
     </div>
     <div
-      class="absolute top-0 inset-x-0 pt-2 transition transform origin-top-right lg:hidden z-20"
+      class="absolute top-0 inset-x-0 pt-2 transition transform origin-top-right lg:hidden z-20 shadow-2xl"
       v-show="isOpen"
     >
       <div >

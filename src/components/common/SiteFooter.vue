@@ -1,33 +1,22 @@
 <template>
+	<footer class="relative text-white max-w-screen bg-agility py-5">
+		<div class="text-center max-w-screen-xl px-8 md:py-4 mx-auto md:flex  md:items-center text-1xl sm:text-2xl ">
+			<div class=" md:text-center flex-shrink-0 relative">
+				<a href="https://www.agilitycms.com" target="_blank" rel="noreferrer" title="Agility CMS">
+					Bara Rent Sverige AB
+				</a>
+			</div>
+			<div class="flex-grow  md:mb-0">
+				<p class=" text-center md:ml-8 md:max-w-3xl">
+					Myggdalsvägen 114, 135 43 Tyresö
+				</p>
+			</div>
+			<div class="flex-1-grow">
+				Orgnr: 559198-2201
+			</div>
+		</div>
 
-  <footer class="relative text-white max-w-screen bg-gray-800 py-5">
-    <div class="max-w-screen-xl px-8 md:py-4 mt-8 mx-auto md:flex  md:items-center text-2xl ">
-      <div class="text-center mb-4 md:mb-0 md:text-center flex-shrink-0 relative">
-        <a
-          href="https://www.agilitycms.com"
-          target="_blank"
-          rel="noreferrer"
-          title="Agility CMS"
-        >
-        Bara Rent Sverige AB
-
-        </a>
-      </div>
-      <div class="flex-grow mb-4 md:mb-0">
-        <p
-          class="text-center md:text-center md:ml-8 md:max-w-3xl"
-        >
-          Myggdalsvägen 114, 135 43 Tyresö
-          
-        </p>
-      </div>
-      <div class="flex-1-grow text-center">
-        Orgnr: 559198-2201
-
-      </div>
-    </div>
-
-    <!-- <div class="max-w-screen-xl px-8 py-6 md:py-4 mt-8 mx-auto  md:flex md:items-center">
+		<!-- <div class="max-w-screen-xl px-8 py-6 md:py-4 mt-8 mx-auto  md:flex md:items-center">
       <div class="text-center mb-4 md:mb-0 md:text-left flex-shrink-0 relative">
         <a
           href="https://www.agilitycms.com"
@@ -137,15 +126,15 @@
         </ul>
       </div>
     </div> -->
-  </footer>
+	</footer>
 </template>
 
 <script>
-export default {
-  data: function() {
-    return {
-      socials: [],
-    };
-  },
-};
+	export default {
+		data: function() {
+			return {
+				socials: [],
+			}
+		},
+	}
 </script>
