@@ -1,5 +1,5 @@
-<template>
-	<div class="container mx-auto w-full sm:w-8/12 p-3">
+<template class="z-20">
+	<div class="container mx-auto w-full sm:w-8/12 p-3 z-20">
 		<div v-for="(item, index) in item.fields.selectedReviews" :key="index" class="">
 			<div v-if="index == currentIndex" class="shadow-lg mx-3 xl:mx-3 sm:mx-0 lg:mx-0 rounded ">
 				<div class="p-5 relative ">
