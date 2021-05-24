@@ -53,7 +53,7 @@
       <div class="py-4">
         <template v-if="isPreview">
           <p class="text-xs md:text-base">
-            Förhandsgranskar <span class="font-bold">Senaste</span> Ändringar
+            Preview <span class="font-bold">Senaste</span> Ändringarna
           </p>
         </template>
         <template v-else>
