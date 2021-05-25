@@ -4,7 +4,9 @@
 			<div class="flex justify-between items-center py-10 lg:justify-start lg:space-x-10">
 				<div class="lg:w-0 lg:flex-1">
 					<NuxtLink to="/" class="flex items-center">
-						<template v-if="contentItem.logo"> <img class="h-10 sm:h-10 w-auto z-50" :src="contentItem.logo.url" :alt="contentItem.logo.label" :title="contentItem.siteName" /> --> </template>
+						<template v-if="contentItem.logo">
+							<img class="h-10 sm:h-10 w-auto z-50" :src="contentItem.logo.url" :alt="contentItem.logo.label" :title="contentItem.siteName" />
+						</template>
 					</NuxtLink>
 
 					<!-- <a href="/" class="flex items-center">

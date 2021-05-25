@@ -14,15 +14,15 @@
 			<div class="max-w-2xl mx-auto mt-4 px-8">
 				<!-- If Only show main title if subtitle doesn't exist -->
 
-				<h1 v-if="!post.subtitle" class="font-display text-center text-2xl md:text-4xl font-bold my-6 text-secondary-500 ">
+				<h1 v-if="!post.subtitle" class=" text-center text-2xl md:text-4xl font-bold my-6 text-secondary-500 ">
 					{{ post.title }}
 				</h1>
 
-				<h1 v-if="!post.title" class="font-display text-center text-2xl md:text-4xl font-bold my-6 text-secondary-500 ">
+				<h1 v-if="!post.title" class="text-center text-2xl md:text-4xl font-bold my-6 text-secondary-500 ">
 					{{ post.subtitle }}
 				</h1>
 
-				<h1 class="font-display text-center sm:text-2xl font-bold my-6 text-secondary-300 ">
+				<h1 class="text-center sm:text-2xl font-bold my-6 text-secondary-300 ">
 					{{ post.subSubTitle }}
 				</h1>
 

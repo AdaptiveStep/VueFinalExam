@@ -28,7 +28,7 @@
 							{{ fields.tagline }}
 						</span>
 					</template>
-					<h2 class="font-display text-4xl font-black text-secondary-500 md:text-3xl lg:text-5xl tracking-wide text-center mt-4 lg:leading-tight md:text-left">
+					<h2 class="text-4xl font-black text-secondary-500 md:text-3xl lg:text-5xl tracking-wide text-center mt-4 lg:leading-tight md:text-left">
 						{{ fields.title }}
 					</h2>
 					<p class="mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-200">

@@ -2,7 +2,7 @@
 	<div v-bind:class="[background()]">
 		<div class="relative p-11 bg-white" v-if="item.fields.showTitle === 'true'">
 			<div class="max-w-screen-xl mx-auto">
-				<h1 class="font-display text-center text-secondary-500 text-4xl font-black tracking-wide">
+				<h1 class="text-center text-secondary-500 text-4xl font-black tracking-wide">
 					{{ item.fields.title }}
 				</h1>
 			</div>
