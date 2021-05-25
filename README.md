@@ -1,12 +1,12 @@
-# Agility CMS & Nuxt.js Starter
+# Bara Rent - Vue Project
+This is a Nuxt.js site that uses Agility CMS and aims to be a final degree project.
 
-This is sample Nuxt.js starter site that uses Agility CMS and aims to be a foundation for building websites using Nuxt.js and Agility CMS.
+## BUILD
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ec5f8a17-06fc-414f-9385-a351778b85ba/deploy-status)](https://app.netlify.com/sites/bara-vue/deploys)
 
-[Live Website Demo](https://agilitycms-nuxtjs-starter.vercel.app/)
 
-[New to Agility CMS? Sign up for a FREE account](https://agilitycms.com/free)
 
-## About This Starter
+## About This Repo
 
 - Uses [`@agility/agilitycms-nuxt-module`](https://github.com/agility/agilitycms-nuxt-module) - Agility CMS integration for Nuxt.js that supports Content Sync for ultra-fast build times, full page routing and static rendering, and easy async data loading for additional components.
 - Supports full [Page Management](https://help.agilitycms.com/hc/en-us/articles/360055805831).
@@ -68,7 +68,7 @@ When running your site in `production` mode, you will see the published from the
 
 Nuxt.js allows you to deploy your site as a `statically generated` site or as a `server-side rendered` site.
 
-[Deploying your Nuxt.js Site](https://help.agilitycms.com/hc/en-us/articles/360060102952)
+You need to upload the full **/dist** folder to this repo in order to trigger the Netlify Host to use the latest build. (Uploading the entire .dist folder makes sure that Netlify can build faster).
 
 ## Notes
 
