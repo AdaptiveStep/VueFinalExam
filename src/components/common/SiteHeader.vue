@@ -3,23 +3,16 @@
 		<div class="max-w-screen-xl mx-auto">
 			<div class="flex justify-between items-center py-10 lg:justify-start lg:space-x-10">
 				<div class="lg:w-0 lg:flex-1">
-					<!-- <NuxtLink to="/" class="flex items-center">
-						<template v-if="contentItem.logo">
-							<img class="h-10 sm:h-10 w-auto z-50" :src="contentItem.logo.url" :alt="contentItem.logo.label" :title="contentItem.siteName" /> -->
-					<!-- <p class="font-bold text-xl text-secondary-500 ml-3 mt-2">
-                {{ contentItem.siteName }}
-              </p> -->
-					<!-- </template>
-					</NuxtLink> -->
+					<NuxtLink to="/" class="flex items-center">
+						<template v-if="contentItem.logo"> <img class="h-10 sm:h-10 w-auto z-50" :src="contentItem.logo.url" :alt="contentItem.logo.label" :title="contentItem.siteName" /> --> </template>
+					</NuxtLink>
 
-					<a href="/" class="flex items-center">
+					<!-- <a href="/" class="flex items-center">
 						<template v-if="contentItem.logo">
 							<img class="h-10 sm:h-10 w-auto z-50" :src="contentItem.logo.url" :alt="contentItem.logo.label" :title="contentItem.siteName" />
-							<!-- <p class="font-bold text-xl text-secondary-500 ml-3 mt-2">
-                {{ contentItem.siteName }}
-              </p> -->
+							
 						</template>
-					</a>
+					</a> -->
 				</div>
 				<div class="-mr-2 -my-2 lg:hidden">
 					<button @click="toggle" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
@@ -30,21 +23,21 @@
 				</div>
 				<nav class="hidden lg:flex space-x-10 ">
 					<template v-for="link in links">
-						<!-- <NuxtLink
+						<NuxtLink
 							:to="link.path"
 							:key="link.path"
 							class="text-base leading-6 font-medium text-secondary-500 hover:text-primary-500 border-transparent border-b-2 hover:border-primary-500 hover:border-b-primary hover:border-b-2 focus:outline-none focus:text-primary-500 transition duration-300"
 						>
 							{{ link.text }}
-						</NuxtLink> -->
+						</NuxtLink>
 
-						<a
+						<!-- <a
 							:href="link.path"
 							:key="link.path"
 							class="text-base leading-6 font-medium text-secondary-500 hover:text-primary-500 border-transparent border-b-2 hover:border-primary-500 hover:border-b-primary hover:border-b-2 focus:outline-none focus:text-primary-500 transition duration-300"
 						>
 							{{ link.text }}
-						</a>
+						</a> -->
 					</template>
 				</nav>
 			</div>

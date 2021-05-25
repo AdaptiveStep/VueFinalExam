@@ -1,22 +1,49 @@
 <template>
-	<footer class="relative text-white max-w-screen bg-agility py-5">
-		<div class="text-center max-w-screen-xl px-8 md:py-4 mx-auto md:flex  md:items-center text-1xl sm:text-2xl ">
-			<div class=" md:text-center flex-shrink-0 relative">
-				<p target="_blank" rel="noreferrer" title="Home">
-					Bara Rent Sverige AB
-				</p>
-			</div>
-			<div class="flex-grow  md:mb-0">
-				<p class=" text-center md:ml-8 md:max-w-3xl">
-					Myggdalsvägen 114, 135 43 Tyresö
-				</p>
-			</div>
-			<div class="flex-1-grow">
-				Orgnr: 559198-2201
+	<div>
+		<div class="relative p-11 bg-white">
+			<div class="max-w-screen-xl mx-auto">
+				<h1 class="font-display text-center text-secondary-500 text-4xl font-black tracking-wide">
+					Kontakta Oss
+				</h1>
 			</div>
 		</div>
 
-		<!-- <div class="max-w-screen-xl px-8 py-6 md:py-4 mt-8 mx-auto  md:flex md:items-center">
+		<div class="bg-blue-400">
+			<div class="flex justify-center text-white">
+				<div class="grid grid-cols-1 gap-4 px-8 py-10  ">
+					<p class="text-2xl sm:text-5xl tracking-wide "><fa class="mr-2" :icon="fas.faEnvelope" /> info@bararent.se</p>
+
+					<div class="text-2xl sm:text-5xl tracking-wide">
+						<div class="inline">
+							<fa-layers full-width class="fa-1x">
+								<fa :icon="fas.faCircle" />
+								<fa :icon="fas.faPhone" transform="shrink-6" class="fa-inverse text-blue-400" />
+							</fa-layers>
+						</div>
+						0700-35 72 46
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="relative text-white max-w-screen bg-agility py-5">
+			<div class="text-center max-w-screen-xl px-8 md:py-4 mx-auto md:flex  md:items-center text-1xl sm:text-2xl ">
+				<div class=" md:text-center flex-shrink-0 relative">
+					<p target="_blank" rel="noreferrer" title="Home">
+						Bara Rent Sverige AB
+					</p>
+				</div>
+				<div class="flex-grow  md:mb-0">
+					<p class=" text-center md:ml-8 md:max-w-3xl">
+						Myggdalsvägen 114, 135 43 Tyresö
+					</p>
+				</div>
+				<div class="flex-1-grow">
+					Orgnr: 559198-2201
+				</div>
+			</div>
+
+			<!-- <div class="max-w-screen-xl px-8 py-6 md:py-4 mt-8 mx-auto  md:flex md:items-center">
       <div class="text-center mb-4 md:mb-0 md:text-left flex-shrink-0 relative">
         <a
           href="https://www.agilitycms.com"
@@ -126,15 +153,27 @@
         </ul>
       </div>
     </div> -->
-	</footer>
+		</footer>
+	</div>
 </template>
 
 <script>
+	import { fas } from '@fortawesome/free-solid-svg-icons'
+	import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
 	export default {
 		data: function() {
 			return {
 				socials: [],
 			}
+		},
+		computed: {
+			fas() {
+				return fas // NOT RECOMMENDED
+			},
+			faGithub() {
+				return faGithub
+			},
 		},
 	}
 </script>

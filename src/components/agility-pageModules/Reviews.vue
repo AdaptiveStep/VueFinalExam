@@ -3,15 +3,13 @@
 		<div v-for="(item, index) in item.fields.selectedReviews" :key="index" class="">
 			<div v-if="index == currentIndex" class="flex shadow-lg bg-white rounded h-56 overflow-hidden items-center ">
 				<div class="flex flex-col justify-between h-56 text-center flex-auto">
-
-
 					<div class="flex flex-col justify-between flex-1">
 						<div></div>
-							<div class="self-center ">
-								<p class="text-display self-center text-gray-900 text-1xl lg:text-2xl ">{{ item.fields.review }}</p>
-							</div>
+						<div class="self-center ">
+							<p class="text-display self-center text-gray-900 text-1xl lg:text-2xl ">{{ item.fields.review }}</p>
+						</div>
 						<div></div>
-					</div> 
+					</div>
 					<p class="text-2xl text-gray-700 p-4">- {{ item.fields.customer }}</p>
 				</div>
 			</div>

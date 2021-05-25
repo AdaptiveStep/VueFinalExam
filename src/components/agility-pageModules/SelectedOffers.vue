@@ -3,7 +3,7 @@
 		<div class="container mx-auto">
 			<div class="relative p-8">
 				<div class="max-w-screen-xl mx-auto ">
-					<div class="grid gap-8 sm:grid-cols-1 lg:grid-cols-1 ">
+					<div class="flex flex-col-reverse  gap-8 sm:grid-cols-1 lg:grid-cols-1 ">
 						<!-- <a :href="`/blog${item.fields.category.fields.url.href}/${item.fields.slug}`" v-for="(item, index) in item.fields.selectedPosts" :key="index"> -->
 						<!-- USE THIS LINK INSTEAD WHEN DEPLOYING FINISHED BUILD -->
 						<NuxtLink :to="`/blog${item.fields.category.fields.url.href}/${item.fields.slug}`" v-for="(item, index) in item.fields.selectedPosts" :key="index">
