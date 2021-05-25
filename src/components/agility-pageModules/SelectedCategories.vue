@@ -3,9 +3,8 @@
 		<div class="container p-8 mx-auto ">
 			<div class="max-w-screen-xl mx-auto ">
 				<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-					<a :href="`${item.fields.url.href}`" v-for="(item, index) in item.fields.selectedCategories" :key="index">
-						<!-- USE THIS LINK INSTEAD WHEN DEPLOYING FINISHED BUILD -->
-						<!-- <NuxtLink :to="getURL(item)"> -->
+					<!-- USE THIS LINK INSTEAD WHEN DEPLOYING FINISHED BUILD -->
+					<NuxtLink :to="`${item.fields.url.href}`" v-for="(item, index) in item.fields.selectedCategories" :key="index">
 						<div>
 							<div class="flex-col group md:mb-0">
 								<div class="relative h-64">
@@ -18,8 +17,7 @@
 								</div>
 							</div>
 						</div>
-						<!-- </NuxtLink> -->
-					</a>
+					</NuxtLink>
 				</div>
 			</div>
 		</div>
@@ -35,9 +33,6 @@
 			dynamicPageItem: Object,
 		},
 		methods: {
-			getURL(item) {
-				return item.fields.url.href
-			},
 			background: function() {
 				let fetchedColor = this.item.fields.bgColor
 				let translatedColor
