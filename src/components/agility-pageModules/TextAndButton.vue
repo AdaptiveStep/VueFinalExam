@@ -7,7 +7,9 @@
 			</div>
 
 			<div class="flex items-center justify-center  md:gap-8 gap-4 pt-5 pb-5 text-2xl">
-				<button class="bg-blue-400 hover:bg-blue-400 text-white font-bold py-2 px-8 border-b-2 border-r-2 border-blue-700 hover:border-blue-500 rounded  focus:outline-none ">{{ fields.buttonTitle }}</button>
+				<NuxtLink :to="item.fields.buttonLink.href">
+					<button class="bg-blue-400 hover:bg-blue-400 text-white font-bold py-2 px-8 border-b-2 border-r-2 border-blue-700 hover:border-blue-500 rounded  focus:outline-none ">{{ fields.buttonTitle }}</button>
+				</NuxtLink>
 			</div>
 		</div>
 	</div>

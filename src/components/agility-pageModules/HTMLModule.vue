@@ -1,19 +1,14 @@
 <template>
 	<div v-bind:class="[background()]">
-
-<div class="relative p-11 bg-white" v-if="item.fields.showTitle === 'true' ">
-    <div class="max-w-screen-xl mx-auto">
-      <h1 
-        class="font-display text-center text-secondary-500 text-4xl font-black tracking-wide"
-      >
-        {{item.fields.title }}
-      </h1>
-    </div>
-  </div>
-
+		<div class="relative p-11 bg-white" v-if="item.fields.showTitle === 'true'">
+			<div class="max-w-screen-xl mx-auto">
+				<h1 class="font-display text-center text-secondary-500 text-4xl font-black tracking-wide">
+					{{ item.fields.title }}
+				</h1>
+			</div>
+		</div>
 
 		<div class="container max-w-2xl mx-auto">
-		
 			<div class="rounded-images p-3 prose max-w-full mx-auto" v-html="item.fields.hTML" />
 		</div>
 	</div>

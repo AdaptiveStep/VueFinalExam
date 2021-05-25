@@ -2,9 +2,9 @@
 	<footer class="relative text-white max-w-screen bg-agility py-5">
 		<div class="text-center max-w-screen-xl px-8 md:py-4 mx-auto md:flex  md:items-center text-1xl sm:text-2xl ">
 			<div class=" md:text-center flex-shrink-0 relative">
-				<a href="https://www.agilitycms.com" target="_blank" rel="noreferrer" title="Agility CMS">
+				<p target="_blank" rel="noreferrer" title="Home">
 					Bara Rent Sverige AB
-				</a>
+				</p>
 			</div>
 			<div class="flex-grow  md:mb-0">
 				<p class=" text-center md:ml-8 md:max-w-3xl">
