@@ -1,6 +1,6 @@
 <template>
 	<div v-bind:class="[background()]">
-		<div class="container p-8 mx-auto">
+		<div class="container p-8 mx-auto ">
 			<div class="max-w-screen-xl mx-auto ">
 				<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 					<a :href="`${item.fields.url.href}`" v-for="(item, index) in item.fields.selectedCategories" :key="index">

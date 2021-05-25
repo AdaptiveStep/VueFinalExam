@@ -1,11 +1,18 @@
-<template class="z-20">
-	<div class="container mx-auto w-full sm:w-8/12 p-3 z-20">
+<template class="z-20  ">
+	<div class="container mx-auto w-full p-3 z-20 relative lg:-mt-8 h-64 hidden lg:block">
 		<div v-for="(item, index) in item.fields.selectedReviews" :key="index" class="">
-			<div v-if="index == currentIndex" class="shadow-lg mx-3 xl:mx-3 sm:mx-0 lg:mx-0 rounded ">
-				<div class="p-5 relative ">
-					<p class="text-base text-gray-600 leading-8">{{ item.fields.review }}</p>
-					<div class="flex justify-end mt-2"></div>
-					<p class="text-right text-gray-600 p-3">{{ item.fields.customer }}</p>
+			<div v-if="index == currentIndex" class="flex shadow-lg bg-white rounded h-56 overflow-hidden items-center ">
+				<div class="flex flex-col justify-between h-56 text-center flex-auto">
+
+
+					<div class="flex flex-col justify-between flex-1">
+						<div></div>
+							<div class="self-center ">
+								<p class="text-display self-center text-gray-900 text-1xl lg:text-2xl ">{{ item.fields.review }}</p>
+							</div>
+						<div></div>
+					</div> 
+					<p class="text-2xl text-gray-700 p-4">- {{ item.fields.customer }}</p>
 				</div>
 			</div>
 		</div>

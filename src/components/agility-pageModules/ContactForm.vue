@@ -1,13 +1,13 @@
 <template>
 	<div class="relative ">
 
-		<div class="relative px-8">
+		<!-- <div class="relative px-8">
 			<div class="max-w-screen-xl mx-auto my-12 md:mt-18">
 				<h1 class="font-display text-center text-secondary-500 text-4xl font-black tracking-wide">
 					Kontakta oss
 				</h1>
 			</div>
-		</div>
+		</div> -->
 
 		<div class="max-w-auto">
 			<div class="rounded-images prose max-w-full mx-auto" v-html="item.fields.textblob" />
@@ -26,7 +26,7 @@
 					</div>
 
 					<div class="grid grid-cols-1 mt-5 mx-7">
-						<textarea name="" id="" cols="10" rows="3" placeholder="Jag behöver hjälpm med" class="py-2 px-3 rounded-lg border-2 border-pink-100 mt-1 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent"></textarea>
+						<textarea name="" id="" cols="10" rows="3" placeholder="Jag behöver hjälp med" class="py-2 px-3 rounded-lg border-2 border-pink-100 mt-1 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent"></textarea>
 					</div>
 
 					<!-- SEND BUTTON HERE -->

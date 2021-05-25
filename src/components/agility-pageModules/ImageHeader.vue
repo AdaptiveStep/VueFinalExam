@@ -2,7 +2,7 @@
 <div class="w-full h-64 bg-center bg-no-repeat bg-cover">
     <div class="absolute w-full h-64 bg-opacity-50 bg-black flex justify-center items-center">
         <div class="mx-4 text-center justify-center text-white">
-            <h1 class="font-bold text-6xl mb-4">{{fields.title}}</h1>
+            <h1 class="font-bold text-5xl sm:text-6xl mb-4 break-words">{{fields.title}}</h1>
         </div>
     </div>
       <img

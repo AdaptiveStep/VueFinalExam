@@ -1,21 +1,49 @@
 <template>
-  <div class="relative ">
+  <div class="">
     <div class="max-w-auto">
-      <div class="md:h-96 relative">
+
+      
+      <div v-if="post.imageHeaderSettings ==='full'" class="md:h-96 relative ">
         <img
           :src="post.image.url"
           class="object-cover object-center h-96 w-full "
           
         />
       </div>
+
+      <div v-else-if="post.imageHeaderSettings ==='small'" class=" m-10 ">
+        <div class="container mx-auto">
+        <img
+          :src="post.image.url"
+          class="object-cover object-center mx-auto h-96 rounded-lg"
+        />
+        </div>
+
+
+      </div>
+
+
+
+
       <div class="max-w-2xl mx-auto mt-4 px-8">
 
-        
+        <!-- If Only show main title if subtitle doesn't exist -->
 
-        <h1 class="font-display text-4xl font-bold my-6 text-secondary-500">
+        <h1 v-if="!post.subtitle" class="font-display text-center text-2xl md:text-4xl font-bold my-6 text-secondary-500 ">
           {{ post.title }}
         </h1>
-        <div class="prose max-w-full mb-20" :inner-html.prop="post.content" />
+
+        <h1 v-if="!post.title" class="font-display text-center text-2xl md:text-4xl font-bold my-6 text-secondary-500 ">
+          {{ post.subtitle }}
+        </h1>
+        
+        <h1 class="font-display text-center sm:text-2xl font-bold my-6 text-secondary-300 ">
+          {{ post.subSubTitle }}
+        </h1>
+
+        <div class=" max-w-full mb-10 rounded-images" :inner-html.prop="post.content" />
+
+
       </div>
     </div>
   </div>
@@ -45,3 +73,15 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+	/* >>> means "deep selection. i.e affecting child components" */
+	.rounded-images >>> img {
+		border-radius: 1rem;
+    display:inline;
+	}
+
+  	.rounded-images >>> span img {
+		display: inline;
+	}
+</style>

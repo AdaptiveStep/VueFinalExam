@@ -1,10 +1,13 @@
 <template>
 	<div v-bind:class="[background()]">
 		<div class="container mx-auto ">
-			<div class="relative p-8">
+			<div class="p-8">
 				<div class="max-w-screen-xl mx-auto ">
-					<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 ">
-						<a :href="`/blog${item.fields.category.fields.url.href}/${item.fields.slug}`" v-for="(item, index) in item.fields.selectedPosts" :key="index">
+					<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+						
+						
+						
+						<a class="justify-self-center" :href="`/blog${item.fields.category.fields.url.href}/${item.fields.slug}`" v-for="(item, index) in item.fields.selectedPosts" :key="index">
 							<!-- USE THIS LINK INSTEAD WHEN DEPLOYING FINISHED BUILD -->
 							<!-- <NuxtLink :to="getURL(item)"> -->
 							<div>
@@ -13,7 +16,7 @@
 										<img :src="item.fields.image.url" :alt="item.fields.title" class="object-cover object-center rounded-t-lg" style="width: 100%; height: 100%;" />
 									</div>
 									<div class="bg-blue-400 p-3 text-center border-t-0 rounded-b-xl">
-										<h2 class="text-white mt-1 font-black text-2xl group-hover:text-blue-900 transition duration-300">
+										<h2 class="text-white mt-1 font-black text-2xl group-hover:text-blue-900 transition duration-300 ">
 											{{ item.fields.title }}
 										</h2>
 									</div>
@@ -21,6 +24,8 @@
 							</div>
 							<!-- </NuxtLink> -->
 						</a>
+
+
 					</div>
 				</div>
 			</div>
