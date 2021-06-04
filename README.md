@@ -1,5 +1,5 @@
 # Bara Rent - Vue Project
-This is a Nuxt.js site that uses Agility CMS and aims to be a final degree project.
+This is a Nuxt.js site that uses Agility CMS and aims to be a final degree project. This repository is forked from the agilityCMS startup project and therefore includes the information related to AgilityCMS.
 
 ## BUILD
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ec5f8a17-06fc-414f-9385-a351778b85ba/deploy-status)](https://app.netlify.com/sites/bara-vue/deploys)
